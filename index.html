@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entrega 2 Torres</title>
+    <style>
+    /* CSS básico embebido */
+    body { font-family: sans-serif; margin: 20px; }
+    #lista-productos { display: flex; flex-wrap: wrap; gap: 20px; }
+    .producto { border: 1px solid #ccc; padding: 10px; width: 150px; text-align: center; }
+    .producto img { width: 100%; height: auto; }
+    .producto h3 { font-size: 1em; margin: 0.5em 0; }
+    .producto p { margin: 0.5em 0; font-weight: bold; }
+    .producto button { background: #28a745; color: #fff; border: none; padding: 5px; cursor: pointer; }
+    .producto button:hover { background: #218838; }
+    /* Estilos para un encabezado con contador (opcional) */
+    #contador-carrito { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Tienda de Videojuegos</h1>
+  <p>Carrito: <span id="contador-carrito">0</span> productos</p>
+  <div id="lista-productos">
+    <!-- Los productos se insertarán aquí mediante JS -->
+  </div>
+
+  <!-- Cargar el script JavaScript al final del body -->
+  <script src="app.js"></script>
+</body>
+</html>
